@@ -1,0 +1,62 @@
+{
+  "pauta": [
+    {
+      "id": 1,
+      "descricao": "Aumento mensalidade",
+      "data_criacao": "21/11/2020"
+    },
+    {
+      "descricao": "Manutenção Prédio",
+      "data_criacao": "24/11/2020",
+      "id": 2
+    },
+    {
+      "descricao": "Votação Teste",
+      "data_criacao": "24/11/2020",
+      "id": 3
+    }
+  ],
+  "associado": [
+    {
+      "id": 1,
+      "cpf": 47159090063,
+      "nome_associado": "Jair Luciano Pereira",
+      "ativo": "S"
+    },
+    {
+      "cpf": "52060090064",
+      "nome_associado": "Lucas Klein Pereira",
+      "ativo": "S",
+      "id": 2
+    }
+  ],
+  "sessao_votacao": [
+    {
+      "id": 1,
+      "id_pauta": 1,
+      "data_sessao": "21/11/2020",
+      "duracao": 60,
+      "ativo": "S"
+    }
+  ],
+  "voto": [
+    {
+      "id": 1,
+      "id_sessao": "1",
+      "voto": "S",
+      "id_associado": "1"
+    },
+    {
+      "id_sessao": "2",
+      "voto": "S",
+      "id_associado": "2",
+      "id": 2
+    },
+    {
+      "id_sessao": "2",
+      "voto": "S",
+      "id_associado": "1",
+      "id": 3
+    }
+  ]
+}
