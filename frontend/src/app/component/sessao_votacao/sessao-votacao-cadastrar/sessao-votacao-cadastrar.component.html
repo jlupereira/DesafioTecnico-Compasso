@@ -1,0 +1,24 @@
+<mat-card>
+	<mat-card-title>Sessao de Votação</mat-card-title>
+	<form>
+		<mat-form-field>
+			<input matInput placeholder="Id Pauta" [(ngModel)]="sessaovotacao.id_pauta" name="id_pauta">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput placeholder="Data Sessao" [(ngModel)]="sessaovotacao.data_sessao" name="data_sessao">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput placeholder="Ativo" [(ngModel)]="sessaovotacao.ativo" name="ativo">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput placeholder="Duração" [(ngModel)]="sessaovotacao.duracao" name="duracao">
+		</mat-form-field>
+	</form>
+	<button mat-raised-button (click)="cadastrarSessaoVotacao()" color="primary">
+		Salvar
+	</button>
+
+	<button mat-raised-button (click)="cancelar()">
+		Cancelar
+	</button>
+</mat-card>

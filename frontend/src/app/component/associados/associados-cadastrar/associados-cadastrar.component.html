@@ -1,0 +1,21 @@
+<mat-card>
+	<mat-card-title>Novo Associado</mat-card-title>
+	<form>
+		<mat-form-field>
+			<input matInput placeholder="CPF" [(ngModel)]="associado.cpf" name="cpf">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput placeholder="Nome Associado" [(ngModel)]="associado.nome_associado" name="nome_associado">
+		</mat-form-field>
+		<mat-form-field>
+			<input matInput placeholder="Ativo" [(ngModel)]="associado.ativo" name="ativo">
+		</mat-form-field>
+	</form>
+	<button mat-raised-button (click)="cadastrarAssociado()" color="primary">
+		Salvar
+	</button>
+
+	<button mat-raised-button (click)="cancelar()">
+		Cancelar
+	</button>
+</mat-card>

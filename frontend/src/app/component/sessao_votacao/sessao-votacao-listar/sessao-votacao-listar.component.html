@@ -1,0 +1,36 @@
+<div class="mat-elevation-z4">
+  <table mat-table [dataSource]="sessaovotacao">
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>Id</th>
+      <td mat-cell *matCellDef="let row">{{row.id}}</td>
+    </ng-container>
+
+     <!-- Id Pauta Column -->
+    <ng-container matColumnDef="id_pauta">
+      <th mat-header-cell *matHeaderCellDef>Id Pauta</th>
+      <td mat-cell *matCellDef="let row">{{row.id_pauta}}</td>
+    </ng-container>
+
+    <!-- Data Sessao Column -->
+    <ng-container matColumnDef="data_sessao">
+      <th mat-header-cell *matHeaderCellDef>Data da Sessão</th>
+      <td mat-cell *matCellDef="let row">{{row.data_sessao}}</td>
+    </ng-container>
+
+    <!-- Ativo Column -->
+    <ng-container matColumnDef="ativo">
+      <th mat-header-cell *matHeaderCellDef>Ativo</th>
+      <td mat-cell *matCellDef="let row">{{row.ativo}}</td>
+    </ng-container>
+
+    <!-- Duracao Column -->
+    <ng-container matColumnDef="duracao">
+      <th mat-header-cell *matHeaderCellDef>Duração</th>
+      <td mat-cell *matCellDef="let row">{{row.duracao}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
